@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   if @post.valid?
 
      @post.save
-     @post = Author.create!(post_params)
+     @post = Post.create!(post_params)
 
     redirect_to post_path(@post)
   else
