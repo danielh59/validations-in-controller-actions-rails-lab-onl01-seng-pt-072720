@@ -16,7 +16,7 @@ class PostsController < ApplicationController
       render :edit
       end
   end
-  
+
   private
 
   def post_params
