@@ -8,11 +8,14 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post.update(post_params)
+      if condition
+        
+      end 
+        @post.update(post_params)
 
-    redirect_to post_path(@post)
+        redirect_to post_path(@post)
+      end
   end
-
   private
 
   def post_params
