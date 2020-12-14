@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @post = Post.find(params[:id])
+    @post = Post.new(post_params)
 
       if @post.valid?
          @post.update(post_params)
