@@ -9,8 +9,8 @@ class PostsController < ApplicationController
 
   def update
       if condition
-        
-      end 
+
+      end
         @post.update(post_params)
 
         redirect_to post_path(@post)
