@@ -19,6 +19,7 @@ class PostsController < ApplicationController
   else
     render :new
   end
+end
 
   def update
     @post.update(post_params)
